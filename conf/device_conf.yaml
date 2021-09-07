@@ -1,0 +1,12 @@
+DeviceNoPage:
+  - huawei: "screen-length 0 temporary"
+  - h3c: "screen-length disable"
+  - cisco: "terminal length 0"
+
+Huawei:
+  - display version
+  - quit
+
+H3C:
+  - display version
+  - quit

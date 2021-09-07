@@ -1,0 +1,30 @@
+Ciphers:
+  - aes128-ctr
+  - aes192-ctr
+  - aes256-ctr
+  - aes128-gcm@openssh.com
+  - arcfour256
+  - arcfour128
+  - aes128-cbc
+  - aes256-cbc
+  - 3des-cbc
+  - des-cbc
+
+KeyExchanges:
+  - diffie-hellman-group-exchange-sha256
+
+Timeout: 20
+
+TerminalModes:
+  ECHO: 1
+  TTY_OP_ISPEED: 14400
+  TTY_OP_OSPEED: 14400
+
+Expects:
+  - "#"
+  - "%"
+  - ">"
+
+LogOutputPaths:
+  - "logfiles/ssh.log"
+  - "stdout"
